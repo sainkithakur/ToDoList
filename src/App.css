@@ -1,3 +1,10 @@
+body{
+  background-image: url("https://th.bing.com/th/id/R.a2252418ca13c1fe251ef062a0667a54?rik=E1QEtvp4Dse4qA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-QEmB-5ncqLk%2fUK_xiti84HI%2fAAAAAAAABVc%2fTR8K9oSXsnU%2fs1600%2fFunny-hd-wallpapers-1.jpg&ehk=%2f%2fgOLDT5PtL8vPQzau9xfjKvFlrODjlVfTHx05jmBEA%3d&risl=&pid=ImgRaw&r=0");
+ 
+}
+
+
+
 .App {
   text-align: center;
 }
@@ -6,6 +13,82 @@
   height: 40vmin;
   pointer-events: none;
 }
+.container{
+  min-height: 20vh;
+  width: 100%;
+  color: white;
+ 
+  display: flex;
+  /*flex-direction: column;*/
+ /* justify-content: center;*/
+  align-items: center;
+  gap: 5px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+button:hover {
+  background-color: #20bf6b
+  ;
+}
+
+ol{
+  margin-top: 30px;
+
+}
+ol li {
+  padding-left: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  color:#8566aa ;
+  text-transform: capitalize;
+}
+.todo_style {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.todo_style .fa-times {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8566aa;
+  border-radius: 50%;
+  margin: 0 15px 0 35px ;
+  color: aliceblue;
+  box-shadow: 5px 5px -15px rgba(0, 0, 0, 0.3);
+}
+.todo_style .fa-times:hover {
+  background-color: crimson;
+}
+.todo_style .fa-times:hover .list_style {
+  color: crimson;
+}
+@media (max-width: 768px) {
+  .center_div {
+    width:55%
+  }
+  .todo_style .fa-times {
+    margin: 0 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    margin-left: 5px;
+    min-height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 5px;
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,26 +96,3 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
